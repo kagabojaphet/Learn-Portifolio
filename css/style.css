@@ -1,0 +1,60 @@
+*,*::after,*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #222;
+  font-weight: 400;
+}
+nav {
+  background-color:gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  width: 100%;
+}
+.logo {
+  font-size: 3.2rem;
+  letter-spacing: 10px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, black, blue, white);
+}
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links:link,
+.nav-links:visited {
+  color: rgb(18, 1, 167);
+  transition: all 03s;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.nav-links:hover,
+.nav-links:active {
+  color: blue;
+}
+.btn-green {
+  background-color: white;
+  color: blue;
+}
+.btn:link,
+.btn:visited {
+  padding: 1rem 3rem;
+  border-radius: 0.8rem;
+  transition: all 0.3rem;
+}
+.btn:hover,
+.btn:active {
+  background-color: blueviolet;
+  color: black;
+}

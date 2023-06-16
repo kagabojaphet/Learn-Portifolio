@@ -25,11 +25,17 @@ nav {
   box-shadow: 4px 4px 4px rgba(248, 248, 250, 0.116);
 }
 .logo {
-  font-size: 3.2rem;
-  letter-spacing: 10px;
+  font-size: 2.8rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, black, blue,white);
   color: transparent;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, black, blue, white);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: translate(3px, -3px);
 }
 .nav-link {
   list-style-type: none;
@@ -61,12 +67,18 @@ nav {
 }
 .btn:hover,
 .btn:active {
-  background-color: blueviolet;
+  background-color: rgb(83, 80, 87);
   color: black;
 }
 .home-container {
-  background-color: #222;
-  height: 87.7vh;
+
+  background-image: url("https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?");
+  height: 87vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+  background-attachment: fixed;
 }
 .positoining {
   position: relative;
@@ -79,8 +91,13 @@ nav {
   justify-content: space-between !important;
 }
 .welcome-text {
+  background-color:rgb(71, 70, 70);
+  padding: 3rem;
+  outline: 5px solid rgb(21, 21, 31);
   position: absolute;
-  left: 30%;
+  outline-offset: 1rem;
+  left: 20%;
+  width: 90%;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -126,7 +143,7 @@ nav {
   backface-visibility: hidden;
 }
 .btn-none {
-  color: blue;
+  color: bluhttps://kagabojaphet.github.io/japhet/e;
   background-color: white;
 }
 .btn-none:link,
@@ -140,7 +157,7 @@ nav {
 }
 .btn-none:hover,
 .btn-none:active {
-  background-color: blueviolet;
+  background-color: rgb(83, 80, 87);
   color: black;
 }
 .btn:hover {
@@ -150,4 +167,110 @@ nav {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 2px 3px 3px rgb(200, 168, 230);
+}
+.about-container{
+  padding: 8rem 10rem;
+  background-color: rgba(0, 0, 0, 0.897);
+
+}
+.heading-title{
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 1rem;
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right ,blue,gray,white);
+  position: relative;
+
+}
+.heading-title::before{
+  content: " ";
+  bottom: 0%;
+  left: 0%;
+  height: 5px;
+  width: 25%;
+  background-image: linear-gradient(to right, blue,gray,white);
+  position: absolute;
+  font-size: 1.2rem;
+}
+.heading-title::after{
+  content: " ";
+  top: 0%;
+  left: 0%;
+  height: 5px;
+  width: 80%;
+  background-image: linear-gradient(to right,blue,gray,white);
+  position: absolute;
+  font-size: 1.2rem;
+}
+.image-bg{
+  background-image: linear-gradient(to right bottom ,rgb(52, 52, 226), gray, white);
+  
+}
+.image-bg::before{
+  content: " ";
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: blue;
+
+}
+.about{
+   display: flex;
+  width: 100%;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text p{
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  color:white;
+}
+.text-left{
+  text-align: left !important;
+}
+.about-image {
+  width: 35%;
+  padding: 3rem;
+  transition: all 0.3s;
+  position: relative;
+  border: none;}
+.image-bg{
+  width: 90%;
+  padding: 3rem;
+  transition: all 0.3s;
+  position: relative;
+  border: none;
+}
+.about-image:hover::before{
+  border: 1rem solid rgb(43, 43, 114);
+  width: 100%;
+  height: 100%;
+}
+.about-image::before{
+  content: " ";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  display: block;
+  border-left: 1rem solid rgb(44, 44, 104);
+  border-top: 1rem solid rgb(44, 44, 104);
+}
+.about-image::after{
+  content: " ";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  border-right: 1rem solid rgb(44, 44, 104);
+  border-bottom: 1rem solid rgb(44, 44, 104);
+}
+.about-image img {
+  width: 100%;
 }

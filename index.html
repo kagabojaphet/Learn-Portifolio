@@ -25,7 +25,7 @@
                 <li><a href="" class="nav-links">skills</a></li>
                 <li><a href="" class="nav-links">Blogs</a></li>
                 <li><a href="" class="nav-links">Contact us</a></li>
-                <li><a href="" class="nav-links btn btn-green">Login</a></li>
+                <li><a href="#login-form" class="nav-links btn btn-green">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -83,5 +83,49 @@
           </div>
         </div>
       </div>
+      <div class="form" id="login-form">
+        <div class="form-box">
+           <div clsss="button-box">
+            <div id="login"></div>
+               <button type="submit" class="toggle-btn" onclick="login()">login</button>
+               <button type="submit" class="toggle-btn" onclick="Register()">register</button>
+           </div> 
+           <div class="social-icon">
+            <img src="./image/gg.png">
+            <img src="./image/gm.png">
+            <img src="./image/fe.png">
+            <img src="./image/tw.png" >
+        </div>
+        <div>
+            <form action="" class="input-group" id="f-login">
+                <input type="text" class="input-field" placeholder="username" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="checkbox">Rember Password
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form action="" class="input-group" id="f-Register">
+                <input type="text" class="input-field" placeholder="firstname" required>
+                <input type="text" class="input-field" placeholder="lastrname" required>
+                <input type="checkbox" class="checkbox">I agree to the term & condition
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        </div>
+      </div>
+      <script>
+        var x =document.getElementById("f-login");
+        var y =document.getElementById("f-Register");
+        var z =document.getElementById("login");
+        function Register(){
+        x.style.left ="-400px";
+        y.style.left ="50px";
+        z.style.left ="110px";
+        }
+        function login(){
+        x.style.left ="50px";
+        y.style.left ="450px";
+        z.style.left ="0px";
+        }
+      </script>
 </body>
 </html>

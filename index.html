@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <nav>
@@ -18,7 +19,7 @@
             <h3>KAGABO japhet</h3>
         </div>
         <div class="links">
-            <ul class="nav-link">
+            <ul class="nav-links">
                 <li><a href="#home" class="nav-links">Home</a></li>
                 <li><a href="#about" class="nav-links">About us</a></li>
                 <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
@@ -27,6 +28,9 @@
                 <li><a href="#contact" class="nav-links">Contact us</a></li>
                 <li><a href="#login-form" class="nav-links btn btn-green">Login</a></li>
             </ul>
+        </div>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </div>
     </nav>
     <div class="home-container" id="home">
@@ -82,7 +86,7 @@
             <i class="fa-solid fa-crop-simple" ></i>
             <h3>UI/UX Design</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.ea doloremque cumque repudiandae distinctio facilis..</p>
-            <a href="" class="link-portfolio">Learn more...</a>
+            <a href="" class="link-portfolio"><p>Learn more...</p></a>
           </div>
           <div class="card card-three">
             <i class="fa-brands fa-app-store" ></i>
@@ -209,11 +213,17 @@
             <img src="./image/gg.png">
             <img src="./image/gm.png">
             <img src="./image/fe.png">
-            <img src="./image/tw.png" >
+            <img src="./image/tw.png">
         </div>
         <div>
             <form action="" class="input-group" id="f-login">
+              <span class="icons">
+              <i class="fa-solid fa-user" style="color: #000000;"></i>
+            </span>
                 <input type="text" class="input-field" placeholder="username" required>
+                <span class="icons">
+                <i class="fa-solid fa-lock" style="color: #000000;"></i>
+              </span>
                 <input type="text" class="input-field" placeholder="Password" required>
                 <input type="checkbox" class="checkbox">Rember Password
                 <button type="submit" class="submit-btn">Login</button>
@@ -227,6 +237,7 @@
         </div>
         </div>
       </div>
+      <script src="./script.js"></script>
       <script>
         var x =document.getElementById("f-login");
         var y =document.getElementById("f-Register");

@@ -1,9 +1,14 @@
 @media (max-width: 1200px) {
-  html{
-    scrollbar-width:none ;
+  html, body {
+    overflow-x: hidden;
   }
-  body::-webkit-scrollbar{
-    display: none;
+  body {
+    position: relative
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
   }
 
     .links-media-fixed,
@@ -24,8 +29,11 @@
     .nav-links:visited {
       font-size: 1.6rem;
     }
-
+  }
   @media (max-width: 992px){
+    body::-webkit-scrollbar{
+      display: none;
+    }
     .home{
       display: flex;
       flex-direction: column-reverse;
@@ -35,6 +43,7 @@
       font-size: 1.4rem;
       width: 500px;
       height: 240px;
+      top: 70%;
 
     }
     .image-container{
@@ -44,7 +53,7 @@
     .image-container img {
       border-radius: 80px;
       height: 320px;
-      width: 200px;
+      width: 180px;
     }
     h3{
       font-size: 1.8rem;
@@ -94,6 +103,21 @@
       display: flex;
       align-self: center;
     }
+    .salutation{
+      font-size: 2rem;
+      font-weight:900;
+      color:
+    }
+    .name{
+      font-size: 2rem;
+      font-weight:900;
+      color:
+    }
+    .welcome-text p{
+      font-size: 2rem;
+      font-weight:900;
+      color:
+    }
     
 
   /*.welcome-text {
@@ -111,6 +135,80 @@
   }*/
   }
   @media (max-width: 786px){
-
+    .image-container img{
+      border-radius: 80px;
+      height: 300px;
+      width: 160px;
+    }
+    .welcome-text{
+      align-self: center;
+      font-size: 1.2rem;
+      width: 400px;
+      height: 250px;
+      top: 70%;
+    }
   }
-  
+  @media (max-width: 576px){
+.about-container,
+.portfolio-container,
+.skills-container ,
+.contact-conatiner,
+.form,
+.home-container{
+  padding: 5rem 5rem;
+
+}
+.home-container { 
+  padding-left: 0%;
+}
+.form-box{
+  margin-left: 0%;
+}
+.image-container img{
+  border-radius: 80px;
+  width: 240px;
+  height: 280px;
+}
+    .welcome-text{
+      align-self: center;
+      align-items: center;
+      font-size: 1.2rem;
+      width: 350px;
+      height: 240px;
+      top:70%
+    }
+    .contact{
+      width: 100%;
+      gap: 2rem;
+    }
+    .contact-left{
+     width: 100%;
+    }
+    .contact-right{
+      width: 100%;
+    }
+  }
+  @media (max-width: 486px){
+    .heading-title{
+      font-size: 3rem;
+    }
+    .image-container img{
+    }
+    .welcome-text{
+      width: 300px;;
+      height: auto;
+      top:76%;
+      align-self: center;
+      left: 3rem;
+    }
+    .welcome-text .btn-none{
+         font-size: 12px;
+    }
+    .about-image{
+      display: none;
+    }      
+  }
+  @media (max-width: 396px){
+    }
+
+ 

@@ -100,13 +100,17 @@ nav{
 .dash-left{
   width: 18%;
   background-color:rgba(78, 78, 78, 0.753);
+  height: 900px;
 }
 .dash-right{
   width: 83%;
+  height: 900px;
   background-color: rgba(78, 78, 78, 0.26);
   
 }
 .dsh-icon{
+  position: fixed;
+  margin-left: 2rem;
   margin-top: 6rem;
   display: grid;
   justify-content: center;
@@ -126,7 +130,9 @@ nav{
   border-bottom: 2px solid black;
 }
 .skills,
-.my-courses{
+.my-courses,
+.my-contact,
+.location{
   margin: 2rem ;
 }
 .skills h1{
@@ -204,4 +210,76 @@ nav{
   background-color: rgba(128, 128, 128, 0.39);
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.274);
   border-radius: 2px;
+}
+
+.my-contact h1{
+  font-size: 3rem;
+  color:blue;
+}
+.contact{
+ display: flex;
+ justify-content: space-between;
+ gap: 2rem;
+ height: 70%;
+ 
+}
+.view-contact{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.418);
+  width:470px ;
+  height: 250px;
+  border-radius: 5px;
+  padding: 2rem;
+  align-self: center;
+}
+.view-contact h3{
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.view-contact p{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: black; 
+}
+.view-contact i{
+  font-size: 5rem;
+  padding-left: 10rem;
+  font-weight: 800;
+}
+.view-contact span{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.view-contact .btn{
+  text-decoration: none;
+  font-size: 1.8rem;
+  background-color:gray;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.39);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.274);
+  border-radius: 2px;
+  margin-left: 5rem;
+}
+.location{
+  height: 10%;
+}
+.location h1{
+  font-size: 3rem;
+  color:blue; 
+}
+.location i {
+  font-size: 5rem;
+  padding-left: 10rem;
+  font-weight: 800;
+}
+.place{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.418);
+  border-radius: 5px;
+  height: 90%;
+}
+.place h3{
+  margin-left: 12rem;
+  font-size: 1.8rem;
+  font-weight: 800;
 }

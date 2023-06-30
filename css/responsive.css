@@ -3,7 +3,7 @@
     overflow-x: hidden;
   }
   body {
-    position: relative
+    position: relative;
     overflow-x: hidden;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -22,6 +22,7 @@
       font-size: 2.2rem;
     }
     .nav-links {
+      position: relative;
       gap: 1.5rem;
       display: none;
     }
@@ -81,7 +82,6 @@
     }
     .card-container{
       display: grid;
-      grid-template-columns;
     }
     .card-container p {
       font-size: 2.2rem;
@@ -106,19 +106,16 @@
     .salutation{
       font-size: 2rem;
       font-weight:900;
-      color:
+  
     }
     .name{
       font-size: 2rem;
       font-weight:900;
-      color:
     }
     .welcome-text p{
       font-size: 2rem;
       font-weight:900;
-      color:
     }
-    
 
   /*.welcome-text {
     align-items: center;
